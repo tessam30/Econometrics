@@ -15,9 +15,8 @@ cl   <- function(dat,fm, cluster){
   coeftest(fm, vcovCL) 
 }
 
-# Testing the functions; First cluster on region, then cluster on region + Year to test both models
+# Testing the functions; 
 data(Crime)
-
 Crime$geography <-factor(Crime$region)
 
 # Run a plain linear regression

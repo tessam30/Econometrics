@@ -25,7 +25,7 @@ regModel = lm(crmrte ~ density + taxpc + avgsen, data = Crime)
 summary(regModel)
 
 # apply the 'cl' function by choosing a variable to cluster on.
-# here, we are clustering whether or not the car is american or not (not a great example)
+# here, we are clustering first on geography then on year; Can also do two-way clustering.
 cl(Crime, regModel, Crime$geography)
 cl(Crime, regModel, Crime$year)
 

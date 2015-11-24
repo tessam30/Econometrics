@@ -30,7 +30,7 @@ these areas, we cluster our standard errors at the enumeration area level.
 
 * The basic insight of randomization is a simple one: If units are randomly assigned to a treatment (and not self-selected in some way) then the only thing different between them and people not in treatment (“in expectation”) is the treatment and so later differences we see between them and people not getting the treatment must be due to the treatment.4
 
-definition of a p-value — the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct 
+__definition of a p-value__ — the probability of getting results at least as extreme as the ones you observed, given that the null hypothesis is correct 
 
 Imagine, he said, that you have a coin that you suspect is weighted toward heads. (Your null hypothesis is then that the coin is fair.) You flip it 100 times and get more heads than tails. The p-value won’t tell you whether the coin is fair, but it will tell you the probability that you’d get at least as many heads as you did if the coin was fair. That’s it — nothing more. And that’s about as simple as I can make it, which means I’ve probably oversimplified it and will soon receive exasperated messages from statisticians telling me so [538 Article][2].
 

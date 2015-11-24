@@ -2,6 +2,7 @@
 
 * Standard deviation shows how much individuals within the same sample differ from the sample mean  
 * Standard error shows how close your sample mean is to the population mean  
+
 SD is the better measure to show the difference depends on the nature of data, SEM is always the measure of precision.  
 
 Many people confuse the standard deviation (SD) and the standard error of the mean (SE) and are unsure which,

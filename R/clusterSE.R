@@ -12,10 +12,10 @@ cl   <- function(dat,fm, cluster){
   dfc <- (M/(M-1))*((N-1)/(N-K))
   uj  <- apply(estfun(fm),2, function(x) tapply(x, cluster, sum));
   vcovCL <- dfc*sandwich(fm, meat=crossprod(uj)/N)
-  coeftest(fm, vcovCL) 
+  coeftest(fm, vcovCL)
 }
 
-# Testing the functions; 
+# Testing the functions;
 data(Crime)
 Crime$geography <-factor(Crime$region)
 
@@ -30,9 +30,9 @@ cl(Crime, regModel, Crime$year)
 
 
 # Write to dta to test results in Stata
-dataout <- c("C:/Users/t/Documents/GitHub/Econometrics")
-setwd(dataout)
-write_dta(Crime, "crime.dta")
+#dataout <- c("C:/Users/t/Documents/GitHub/Econometrics")
+#setwd(dataout)
+#write_dta(Crime, "crime.dta")
 
 # State code below to verify calculations
 # use "C:/Users/t/Documents/GitHub/Econometrics/crime.dta", clear
